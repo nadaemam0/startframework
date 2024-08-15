@@ -1,0 +1,100 @@
+<div class="mb-4">
+  <div class="pt-4">
+    <div class="text-center pt-4">
+      <h2 class="text-uppercase mb-3 fs-1 fw-bolder">portfolio component</h2>
+      <div class="d-flex align-items-center justify-content-center mb-3">
+        <div class="line me-3" style="background-color: rgb(44, 62, 80)"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="line ms-3" style="background-color: rgb(44, 62, 80)"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6" (click)="open('poert1.png')">
+          <div>
+            <img
+              alt=""
+              class="w-100 rounded-3"
+              src="assets/imgs ang/poert1.png"
+            />
+            <div
+              class="start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+            ></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" (click)="open('port2.png')">
+          <div class="rounded-3 overflow-hidden position-relative">
+            <img
+              alt=""
+              class="w-100 rounded-3"
+              src="assets/imgs ang/port2.png"
+            />
+            <div
+              class="start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+            ></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" (click)="open('port3.png')">
+          <div class="rounded-3 overflow-hidden position-relative">
+            <img
+              alt=""
+              class="w-100 rounded-3"
+              src="assets/imgs ang/port3.png"
+            />
+            <div
+              class="start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+            ></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" (click)="open('poert1.png')">
+          <div class="rounded-3 overflow-hidden position-relative">
+            <img
+              alt=""
+              class="w-100 rounded-3"
+              src="assets/imgs ang/poert1.png"
+            />
+            <div
+              class="start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+            ></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" (click)="open('port2.png')">
+          <div class="rounded-3 overflow-hidden position-relative">
+            <img
+              alt=""
+              class="w-100 rounded-3"
+              src="assets/imgs ang/port2.png"
+            />
+            <div
+              class="start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+            ></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" (click)="open('port3.png')">
+          <div class="rounded-3 overflow-hidden position-relative">
+            <img
+              alt=""
+              class="w-100 rounded-3"
+              src="assets/imgs ang/port3.png"
+            />
+            <div
+              class="start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @if (isClicked == true) { @if (isClicked == true){
+  <div
+    class="d-flex justify-content-center align-items-center position-fixed start-0 end-0 top-0 bottom-0"
+  >
+    <div
+      class="position-relative d-flex align-items-center justify-content-between mt-4"
+    >
+      <img [src]="imgSrc" class="w-75 mt-3 mx-auto rounded-3" alt="" />
+      <i class="fa-regular fa-circle-xmark fs-1" (click)="close()"></i>
+    </div>
+  </div>
+  } }
+</div>
